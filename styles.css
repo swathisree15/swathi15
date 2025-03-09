@@ -18,8 +18,8 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #FFFF00;
-  color: #333;
+  background-color: #030733;
+  color: #fffefe;
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -35,18 +35,35 @@ nav ul {
   gap: 15px; /* Reduced gap for smaller screens */
   flex-wrap: wrap; /* Allow wrapping on small screens */
 }
+.bx-moon
+{
+  color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Reduced gap for smaller screens */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+
+}
 
 nav ul li {
   display: inline;
 }
+.bx-moon:hover {
+
+  text-decoration: underline;
+}
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fffefe;
   font-weight: bold;
   font-size: 1em; /* Smaller font size for mobile */
   transition: all 0.3s ease;
 }
+
 
 nav ul li a:hover {
   font-size: 1.1em;
@@ -80,7 +97,7 @@ nav ul li a:hover {
   width: 150px; /* Smaller size for mobile */
   height: 150px; /* Smaller size for mobile */
   border-radius: 50%; /* Rounded edges */
-  border: 5px solid #FFFF00; /* Yellow border */
+  border: 5px solid #01052b; /* Yellow border */
   background-image: url('https://res.cloudinary.com/dpa6xi9ny/image/upload/v1741254140/WhatsApp_Image_2025-03-06_at_12.46.28_ffb29de1_sf7dsl.jpg');
   background-size: cover;
   background-position: center;
@@ -202,8 +219,8 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-  background-color: #FFFF00;
-  color: #333;
+  background-color: #040339;
+  color: #fffefe;
   text-align: center;
   padding: 10px 0;
   margin-top: 40px;
@@ -259,12 +276,12 @@ body.dark-mode #theme-toggle {
 }
 
 body.dark-mode .resume-button, body.dark-mode .contact-button {
-  background-color: #FFFF00;
-  color: #333;
+  background-color: rgb(2, 6, 41);
+  color: #f4f2f2;
 }
 
 body.dark-mode .profile-pic {
-  border-color: #FFFF00;
+  border-color: rgb(2, 6, 41);
 }
 
 
