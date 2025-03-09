@@ -1,0 +1,307 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  width: 90%; /* Adjusted for smaller screens */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  background-color: #FFFF00;
+  color: #333;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Reduced gap for smaller screens */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1em; /* Smaller font size for mobile */
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+
+#theme-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* Profile Section */
+#profile {
+  padding: 40px 0; /* Reduced padding for smaller screens */
+  background-color: #f9f9f9;
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 150px; /* Smaller size for mobile */
+  height: 150px; /* Smaller size for mobile */
+  border-radius: 50%; /* Rounded edges */
+  border: 5px solid #FFFF00; /* Yellow border */
+  background-image: url('https://res.cloudinary.com/dpa6xi9ny/image/upload/v1741254140/WhatsApp_Image_2025-03-06_at_12.46.28_ffb29de1_sf7dsl.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.name-container h1 {
+  font-size: 2em; /* Smaller font size for mobile */
+  margin: 0;
+}
+
+.name-container p {
+  font-size: 1em; /* Smaller font size for mobile */
+  color: #555;
+  margin: 0;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted for smaller screens */
+  gap: 15px; /* Reduced gap for smaller screens */
+  margin-top: 20px;
+}
+
+.skill {
+  background-color: #f1f1f1;
+  padding: 15px; /* Reduced padding for smaller screens */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill i {
+  font-size: 1.5em; /* Smaller icons for mobile */
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  margin: 0;
+  font-size: 1em; /* Smaller font size for mobile */
+  font-weight: bold;
+}
+
+/* Education Section */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for smaller screens */
+  gap: 15px; /* Reduced gap for smaller screens */
+  margin-top: 20px;
+}
+
+.education-item {
+  background-color: #f1f1f1;
+  padding: 15px; /* Reduced padding for smaller screens */
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.education-item:hover {
+  transform: scale(1.05);
+}
+
+.education-logo {
+  width: 80px; /* Smaller logos for mobile */
+  height: 80px; /* Smaller logos for mobile */
+  margin-bottom: 10px;
+}
+
+.education-item p {
+  margin: 0;
+  font-size: 1em; /* Smaller font size for mobile */
+}
+
+/* Resume Button */
+.resume-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: transform 0.3s;
+}
+
+.resume-button:hover {
+  transform: scale(1.1);
+}
+
+/* Contact Buttons */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Smaller buttons for mobile */
+  height: 40px; /* Smaller buttons for mobile */
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.contact-button:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #FFFF00;
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Scroll Button */
+#scroll-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.2em;
+  transition: transform 0.3s;
+}
+
+#scroll-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #b1adad;
+  color:rgb(2, 6, 41);
+}
+
+body.dark-mode section {
+  background-color: #c3c0c0;
+  color: rgb(2, 6, 41);
+}
+
+
+body.dark-mode header, body.dark-mode footer {
+  background-color: #555;
+  color:white;
+}
+
+body.dark-mode nav ul li a {
+  color:white;
+}
+
+body.dark-mode #theme-toggle {
+  color: white;
+}
+
+body.dark-mode .resume-button, body.dark-mode .contact-button {
+  background-color: #FFFF00;
+  color: #333;
+}
+
+body.dark-mode .profile-pic {
+  border-color: #FFFF00;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (min-width: 600px) {
+  .profile-pic {
+    width: 180px; /* Larger size for tablets and desktops */
+    height: 180px; /* Larger size for tablets and desktops */
+  }
+
+  .name-container h1 {
+    font-size: 2.5em; /* Larger font size for tablets and desktops */
+  }
+
+  .name-container p {
+    font-size: 1.2em; /* Larger font size for tablets and desktops */
+  }
+
+  .skill i {
+    font-size: 2em; /* Larger icons for tablets and desktops */
+  }
+
+  .skill-name {
+    font-size: 1.2em; /* Larger font size for tablets and desktops */
+  }
+
+  .education-logo {
+    width: 100px; /* Larger logos for tablets and desktops */
+    height: 100px; /* Larger logos for tablets and desktops */
+  }
+
+  .education-item p {
+    font-size: 1.1em; /* Larger font size for tablets and desktops */
+  }
+
+  .contact-button {
+    width: 50px; /* Larger buttons for tablets and desktops */
+    height: 50px; /* Larger buttons for tablets and desktops */
+  }
+}
