@@ -96,7 +96,7 @@ nav ul li a:hover {
 .profile-pic {
   width: 150px; /* Smaller size for mobile */
   height: 150px; /* Smaller size for mobile */
-  border-radius: 50%; /* Rounded edges */
+  border-radius: 20%; /* Rounded edges */
   border: 5px solid #01052b; /* Yellow border */
   background-image: url('https://res.cloudinary.com/dpa6xi9ny/image/upload/v1741254140/WhatsApp_Image_2025-03-06_at_12.46.28_ffb29de1_sf7dsl.jpg');
   background-size: cover;
